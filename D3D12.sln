@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 1 Vector Algebra", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 2 Matrix Algebra", "Chapter 2 Matrix Algebra\Chapter 2 Matrix Algebra.vcxproj", "{738FB9A7-CA73-4B33-8A6E-831B841ACAD0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter 4 Init", "Chapter 4 Init\Chapter 4 Init.vcxproj", "{9C40D128-76B2-425A-BA37-E30DFDD45890}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{738FB9A7-CA73-4B33-8A6E-831B841ACAD0}.Release|x64.Build.0 = Release|x64
 		{738FB9A7-CA73-4B33-8A6E-831B841ACAD0}.Release|x86.ActiveCfg = Release|Win32
 		{738FB9A7-CA73-4B33-8A6E-831B841ACAD0}.Release|x86.Build.0 = Release|Win32
+		{9C40D128-76B2-425A-BA37-E30DFDD45890}.Debug|x64.ActiveCfg = Debug|x64
+		{9C40D128-76B2-425A-BA37-E30DFDD45890}.Debug|x64.Build.0 = Debug|x64
+		{9C40D128-76B2-425A-BA37-E30DFDD45890}.Debug|x86.ActiveCfg = Debug|Win32
+		{9C40D128-76B2-425A-BA37-E30DFDD45890}.Debug|x86.Build.0 = Debug|Win32
+		{9C40D128-76B2-425A-BA37-E30DFDD45890}.Release|x64.ActiveCfg = Release|x64
+		{9C40D128-76B2-425A-BA37-E30DFDD45890}.Release|x64.Build.0 = Release|x64
+		{9C40D128-76B2-425A-BA37-E30DFDD45890}.Release|x86.ActiveCfg = Release|Win32
+		{9C40D128-76B2-425A-BA37-E30DFDD45890}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
