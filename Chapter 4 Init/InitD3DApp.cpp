@@ -14,7 +14,7 @@ public:
 private:
 	virtual void OnResize()override;
 	virtual void Update(const GameTimer& gt)override;
-	virtual void Draw(const GameTimer& gt) override;
+	virtual void Draw(const GameTimer& gt)override;
 };
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE prevInstance, PSTR cmdLine, int showCmd)
