@@ -204,7 +204,7 @@ void BoxApp::Draw(const GameTimer& gt)
 
 	mCommandList->IASetVertexBuffers(0, 1, &_boxGeo->VertexBufferView());
 	mCommandList->IASetIndexBuffer(&_boxGeo->IndexBufferView());
-	mCommandList->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
+	mCommandList->IASetPrimitiveTopology(D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 
 	mCommandList->SetGraphicsRootDescriptorTable(0, _cbvHeap->GetGPUDescriptorHandleForHeapStart());
 
