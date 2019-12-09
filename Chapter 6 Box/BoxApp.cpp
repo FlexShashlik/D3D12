@@ -15,6 +15,7 @@ struct Vertex
 struct ObjectConstants
 {
 	XMFLOAT4X4 WorldViewProj = MathHelper::Identity4x4();
+	XMFLOAT4 PulseColor;
 	float Time = 0;
 };
 
@@ -99,7 +100,8 @@ BoxApp::BoxApp(HINSTANCE hInstance) : D3DApp(hInstance)
 
 BoxApp::~BoxApp()
 {
-
+	if (md3dDevice != nullptr)
+		FlushCommandQueue();
 }
 
 bool BoxApp::Initialize()
@@ -156,6 +158,7 @@ void BoxApp::Update(const GameTimer& gt)
 
 	ObjectConstants objConstants;
 	XMStoreFloat4x4(&objConstants.WorldViewProj, XMMatrixTranspose(worldViewProj));
+	XMStoreFloat4(&objConstants.PulseColor, Colors::Chocolate);
 	objConstants.Time = gt.TotalTime();
 
 	_objectCB->CopyData(0, objConstants);
